@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Blog</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container{
+        width: 90%;
+        margin: 0px auto;
+
+    }
+    header h1{
+        background: #039ee6;
+        height: 200px;
+        width: 100%;
+        text-align: center;
+        line-height: 200px;
+        color: black;
+        border-bottom: 10px solid rgb(0, 0, 0);
+        font-size: 50px;
+    }
+
+    nav{
+        background: black;
+        height: 50px;
+        border-bottom: 5px solid white;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+    .clear{
+        clear: both;
+    }
+    #contenido{
+        float: left;
+        width: calc(80% - 80px);
+        min-height: 500px;
+        background: white;
+        padding: 40px;
+    }
+
+    .article{
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+
+    }
+    aside{
+        float: left;
+        width: calc(20% - 20px);
+        min-height: 500px;
+        background: #039ee6;
+        padding: 10px;
+    }
+
+    footer{
+        background: black;
+        color: white;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+
+</style>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Jonathan Boada</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Principal</li>
+                <li>ayuda</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+
+        <div class="clear"></div>
+
+        <section id="contenido">
+            <article class="article">
+                <h2>Titulo del articulo</h2>
+                <p>Texto del articulo</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo</h2>
+                <p>Texto del articulo</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo</h2>
+                <p>Texto del articulo</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo</h2>
+                <p>Texto del articulo</p>
+            </article>
+        </section>
+
+
+        <aside>
+            <h1>Que buscas</h1>
+            <form>
+                <input type="text">
+                <input type="submit" value="Buscar">
+            </form>
+        </aside>
+
+        <div class="clear">
+
+        </div>
+
+        <footer>
+            Jonathan Boada &copy; 2023
+        </footer>
+    </div>
+
+</body>
+
+</html>

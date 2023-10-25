@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Blog</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background: #ffe0e0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* #container{
+        width: 0%;
+        margin: 0px auto;
+
+    } */
+
+    .header {
+        background-color: rgb(255, 126, 126);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 5px 10%;
+        width: 80%;
+    }
+
+    .header .logo {
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .header .logo img {
+
+        height: 70px;
+        width: auto;
+        transition: all 0.3;
+    }
+
+    .header .logo img:hover {
+        transform: scale(1.2);
+    }
+
+    .col {
+        border-left: 1px solid black;
+    }
+
+    .header .Whatsapp {
+        cursor: pointer;
+        margin-right: 10px;
+        transition: all 0.3;
+    }
+
+    .header .Whatsapp:hover {
+        transform: scale(1.2);
+    }
+
+    nav {
+        background: black;
+        height: 50px;
+        border-bottom: 5px solid white;
+    }
+
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #contenido {
+        float: left;
+        width: calc(80% - 80px);
+        min-height: 500px;
+        background: white;
+        padding: 40px;
+    }
+
+    .article {
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+
+    }
+
+    aside {
+        float: left;
+        width: calc(20% - 20px);
+        min-height: 500px;
+        background: #039ee6;
+        padding: 10px;
+    }
+
+    footer {
+        background: rgb(255, 126, 126);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/avion.png" alt="">
+                <h1>
+                    <span>
+                        MUNDO
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        FANTÁSTICO
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Destino...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">SESIÓN</label>
+                    <select name="menu" id="menu">
+                        <option value="Ingresar">Ingresar</option>
+                        <option value="Registrarse">Noticias</option>
+
+                    </select>
+                </button>
+            </div>
+        </header>
+
+        <div style="padding: 10px;">
+            <table>
+                <tr>
+                    <td> <img height="300px" width="300px" src="imagenes/hawaii.webp" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">HAWAII</h1>
+                        <p style="padding-left: 10px;">Tu mejor destino es la hermosa isla de HAWAII no te pierdas
+                            esta gran promoción que te incluye
+                            estadía, desayuno, y almuerzo ademas te obsequia de regalo una salida nocturna por el
+                            hermoso acuario
+                            con nuestras mejores especies marinas y una noche de fiesta en el mejor yate de lujo
+                            para 2 personas
+                            Que esperas para comprarlo... compra lo YA!!</p>
+                        <br><br>
+                        <p>4 Dias y 5 noches </p> <time> 23/11/2023 </time>
+                        <br><br>
+                        <h3 style="padding-left: 10px">$4.250.000</h3>
+
+                        <a href="#" class="btn"><button
+                                style="background-color: #c1ffc1; padding-left: 10px; border-radius: 5px;">COMPRAR
+                                PAQUETE</button></a>
+                    </td>
+                <tr>
+                    <td> <img height="300px" width="300px" src="imagenes/acapulco.webp" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">ACAPULCO</h1>
+                        <p style="padding-left: 10px;">Tu mejor destino es la hermosa playa de ACAPULCO no te pierdas
+                            esta gran promoción que te incluye
+                            estadía, desayuno, y almuerzo ademas te obsequia de regalo una salida nocturna por el
+                            hermoso acuario
+                            con nuestras mejores especies marinas y una noche de fiesta en el mejor yate de lujo
+                            para 2 personas
+                            Que esperas para comprarlo... compra lo YA!!</p>
+                        <br><br>
+                        <p>4 Dias y 5 noches </p> <time> 23/11/2023 </time>
+                        <br><br>
+                        <h3 style="padding-left: 10px">$2.150.000</h3>
+
+                        <a href="#" class="btn"><button
+                                style="background-color: #c1ffc1; padding-left: 10px; border-radius: 5px;">COMPRAR
+                                PAQUETE</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <img height="300px" width="300px" src="imagenes/san andres.jpg" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">SAN ANDRES</h1>
+                        <p style="padding-left: 10px;">Tu mejor destino es la isla mas hermosa de SAN ANDRES no te
+                            pierdas
+                            esta gran promoción que te incluye
+                            estadía, desayuno, y almuerzo ademas te obsequia de regalo una salida nocturna por el
+                            hermoso acuario
+                            con nuestras mejores especies marinas y una noche de fiesta en el mejor yate de lujo
+                            para 2 personas
+                            Que esperas para comprarlo... compra lo YA!!</p>
+                        <br><br>
+                        <p>4 Dias y 5 noches  <time> 23/11/2023 </time></p>
+                        <br><br>
+                        <h3 style="padding-left: 10px">$1.150.000</h3>
+
+                        <a href="#" class="btn"><button
+                                style="background-color: #c1ffc1; padding-left: 10px; border-radius: 5px;">COMPRAR
+                                PAQUETE</button></a>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <footer>
+            Jonathan Boada &copy; 2023
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+<h>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(255, 179, 179);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .articulo{
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .article {
+            width: 400px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/sarten.png" alt="">
+                <h1>
+                    <span>
+                        RECETAS
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        DE COCINA
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Recetas...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="Colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+        <div style=" display: flex; text-align: justify ; background-color: white;">
+            <div style="padding: 10px;">
+                <table>
+                    <tr>
+                        <td> <img height="200px" width="200px" src="imagenes/pizza.jpeg" alt=""></td>
+                        <td>
+                            <h1 style="padding-left: 10px">PIZZA</h1>
+                            <br>
+                            <h2>Ingredientes</h2>
+                            <br>
+                            <p style="padding-left: 10px;">
+                                <li type="circle">1 kilogramo de harina de fuerza (también conocida como harina 00)</li>
+                                <li type="circle">1 cucharadita de sal fina</li>
+                                <li type="circle">2½ tazas de agua tibia</li>
+                                <li type="circle">2 cucharadas soperas de aceite de oliva</li>
+                                <li type="circle">30 gramos de levadura fresca</li>
+                            </p>
+                            <br><br>
+                            <p>Para la masa
+
+                                1. Precalienta el horno a 200°C. Toma los ingredientes secos para la masa y mézclalos en
+                                un recipiente amplio. Realiza un hoyo en el centro de los ingredientes e incorpora los
+                                ingredientes líquidos a la masa y las especies. Mezcla bien y empieza amasar en el mismo
+                                recipiente. Si ves que la masa necesita más agua añade poco a poco más agua.
+                                Deja reposar <br><br>
+
+                                2. Retira del recipiente y continúa amasando la masa en el mesón enharinado, amasa hasta
+                                que la masa se desprenda de tus manos y queda muy tersa. Cúbrela con una toalla limpia y
+                                deja reposar durante 2 horas.
+                                Para la salsa<br><br>
+
+                                3. Para la salsa, coloca todos los ingredientes en un sartén y cocina durante 5 minutos
+                                espesando ligeramente la salsa. Enfría y reserva.
+                                Arma<br><br>
+
+                                4. Toma la masa reservada anteriormente y estírala en forma redonda del tamaño de tu
+                                molde. Coloca en la lata y pínchala con un cuchillo o palillo en toda la masa menos los
+                                bordes. Coloca la salsa sobre la masa esparciéndola sin llegar a los bordes y coloca los
+                                toppings previamente cortados en pedazos, a tu gusto.
+                                Hornea<br><br>
+
+                                5. Lleva la pizza al horno precalentado y hornea durante 10 a 15 minutos. Si ves que se
+                                está tostando mucho retírala antes. Antes de servir coloca un chorrito de aceite de
+                                oliva sobre la pizza.</p><br><br>
+
+                            <a href="10ejer.html" class="btn"><button
+                                    style="background-color: rgb(255, 137, 137); padding-left: 10px;">Volver</button></a>
+                        </td>
+                </table>
+            </div>
+        </div>
+        <footer class="redes">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/redes.png" alt="">
+
+                    <h1>Síguenos en <br>nuestras redes</h1>
+                </div>
+                <div style="margin-right: 40%;">
+                    <p>⚠️ Acepto Términos y Condiciones</p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+
+</html>
+</body>
+
+</html>

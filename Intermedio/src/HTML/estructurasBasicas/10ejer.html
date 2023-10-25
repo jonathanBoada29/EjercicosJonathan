@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(245, 245, 245);
+        }
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            margin-left: 3em;
+            border-collapse: collapse;
+            width: 900px;
+        }
+
+        .header {
+            background-color: rgb(73, 73, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .header.nav-links {
+            list-style: none;
+
+        }
+
+        .header .nav-links li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .header .nav-links li:hover {
+            transform: scale(1.1);
+        }
+
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 6em;
+            right: 1em;
+            width: 12em;
+            text-align: center;
+            border: solid black;
+            background-color: rgb(98, 98, 255);
+            border-radius: 20px;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <div style="width: 100%;">
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="robot.png " alt="">
+                <h1>
+                    <span>
+                        SELL
+                    </span> 
+                    <br>
+                    <span style="margin-left: 10px;">
+                        TECHNOLOGY
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+
+                    <input type="search" placeholder="Buscador...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="Whatsapp_logo.svg.png" alt="">
+            </div>
+        </header>
+        <div style="width: 78%; background-color: white;">
+
+
+            <div>
+                <table>
+                    <tr>
+                        <td> <img height="200px" width="180px" src="descarga.jpg" alt=""></td>
+                        <td>Un dron es un vehículo aéreo no
+                            tripulado, es
+                            decir, que es un tipo de aeronave que es capaz de
+                            desplazarse por el aire sin que haya un piloto a bordo. Pueden ser controlados de manera
+                            remota,
+                            o
+                            por medio de programación específica mediante software y GPS para que operen de forma
+                            autónoma.
+
+                            <h3>$1.250.000</h3>
+                            <br>
+                            <a href="#" class="btn"><button style="background-color: #00c200;">Ingresar al
+                                    carrito</button></a>
+                        </td>
+                    <tr>
+                        <td>
+                            <img height="200px" width="180px" src="robot2.png" alt="">
+                        </td>
+                        <td>
+                            Actualmente podría considerarse que un robot es una computadora con la capacidad y el
+                            propósito
+                            de
+                            movimiento que en general es capaz de desarrollar múltiples tareas de manera flexible según
+                            su
+                            programación; así que podría diferenciarse de algún electrodoméstico específico.
+
+                            <h3>$300.000</h3>
+                            <br>
+                            <a href="#" class="btn"><button style="background-color: #00c200;">Ingresar al
+                                    carrito</button></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img height="200px" width="180px" src="berry1.jpg" alt="">
+                        </td>
+                        <td>
+                            La Raspberry Pi es una serie de ordenadores monoplaca u ordenadores de placa simple de bajo
+                            costo
+                            desarrollado en el Reino Unido por la Raspberry Pi Foundation, con el objetivo de poner en
+                            manos
+                            de
+                            las personas de todo el mundo el poder de la informática y la creación digital.
+
+                            <h3>$900.000</h3>
+                            <br>
+                            <a href="#" class="btn"><button style="background-color: #00c200;">Ingresar al
+                                    carrito</button></a>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+        <div style="width: 22%; ">
+            <ul class="nav-links">
+
+                <h2>Iniciar Sesión</h2>
+                <br>
+                <label for="i_email">Email</label>
+                <br>
+                <input type="text" style="width : 175px; height: 30;" id="i_email" required>
+                <label for="i_contraseña">Contraseña</label>
+                <input type="password" style="width : 175px; height: 30;" id='i_contraseña' placeholder="Contraseña" required>
+                <br><br>
+                <input type="submit" style="width : 95px; height: 30; background-color: #00c200; font-size: 15px;"
+                    value="INGRESAR">
+                <input type="reset" style="width : 95px; height: 50; background-color: #c40000; font-size: 15px;"
+                    value="CANCELAR">
+                <br><br>
+
+                <a style="color: black;" href="#">Registrarse</a><br><br>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

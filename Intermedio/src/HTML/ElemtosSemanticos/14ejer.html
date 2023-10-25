@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="14ejer.css">
+    <title>Pagina Producto</title>
+</head>
+
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila" >
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/Luffy.webp" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Luffy</p>
+                        <span class="precio">$200</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/zoro.webp" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Zoro</p>
+                        <span class="precio">$200</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/sanji.jpeg" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Sanji</p>
+                        <span class="precio">$200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/franky.jpg" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Franky</p>
+                        <span class="precio">$150</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/chopper.webp" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Chopper</p>
+                        <span class="precio">$110</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/Brook.webp" alt="">
+                        <p class="descripcion">Muñeco Exclusivo de Brook</p>
+                        <span class="precio">$120</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="" alt="" id="imagenes">
+                <h2 id="modelo">Muñeco Exclusivo de Luffy</h2>
+                <p id="descripcion">Gomu Gomu No</p>
+
+                <span class="precio" id="precio">$ 200</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANTIDAD</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

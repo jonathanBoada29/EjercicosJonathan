@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 143, 233);
+        }
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            margin-left: 3em;
+            border-collapse: collapse;
+            width: 900px;
+        }
+
+        .header {
+            background-color: rgb(255, 0, 162);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .header.nav-links {
+            list-style: none;
+
+        }
+
+        .header .nav-links li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .header .nav-links li:hover {
+            transform: scale(1.1);
+        }
+
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 6em;
+            right: 1em;
+            width: 12em;
+            text-align: center;
+            border: solid black;
+            background-color: rgb(255, 106, 225);;
+            border-radius: 20px;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <div style="width: 100%;">
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/regalo.png" alt="">
+                <h1>
+                    <span>
+                        HERE 
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        HAPPINESS
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+
+                    <input style="border-radius: 5px; " type="search" placeholder="Crea tu mejor version...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+        </header>
+        <div style="width: 78%; background-color: rgb(255, 205, 250);">
+
+
+            <div style="padding: 10px;">
+                <table>
+                    <tr>
+                        <td> <img height="300px" width="300px" src="imagenes/invitacion1.jpg" alt=""></td>
+                        <td>
+                            <h1 style="padding-left: 10px">Invitación Graduación</h1>
+                            <br><br>
+                            <p style="padding-left: 10px;">Te creamos la mejor tarjeta de invitación para esta fecha especial que es tu graduación</p>
+                            <br><br>
+                            <a href="#" class="btn"><button
+                                    style="padding-left: 10px; background-color: #ffc6e1;">MODIFICAR</button></a>
+                        </td>
+                    <tr>
+                        <td> <img height="300px" width="300px" src="imagenes/invitacion2.jpg" alt=""></td>
+                        <td>
+                            <h1 style="padding-left: 10px">Invitación de Cumpleaños</h1>
+                            <br><br>
+                            <p style="padding-left: 10px;">Crea la mejor tarjeta de cumpleaños con nosotros, diseña tu propio estilo y disfruta de esta hermosa fecha</p>
+                            <br><br>
+                            <a href="#" class="btn"><button
+                                    style="padding-left: 10px; background-color: #ffc6e1;">MODIFICAR</button></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img height="300px" width="300px" src="imagenes/invitacion3.jpg" alt=""></td>
+                        <td>
+                            <h1 style="padding-left: 10px">Invitación de Matrimonio</h1>
+                            <br><br>
+                            <p style="padding-left: 10px;">Para la mejor experiencia de tu vida crea con nosotros los mejores diseños personalizados de las tarjetas de matrimonio, disfruta de la mejor calidad para un matrimonio de calidad</p>
+                            <br><br>
+                            <a href="#" class="btn"><button
+                                    style="padding-left: 10px; background-color: #ffc6e1;">MODIFICAR</button></a>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+        <div style="width: 22%; ">
+            <ul class="nav-links">
+
+                <h2>Iniciar Sesión</h2>
+                <br>
+                <label for="i_email">Email</label>
+                <br>
+                <input type="text" style="width : 175px; height: 30;" id="i_email" placeholder="Usuario" required>
+                <label for="i_contraseña">Contraseña</label>
+                <input type="password" style="width : 175px; height: 30;" id='i_contraseña' placeholder="Contraseña"
+                    required>
+                <br><br>
+                <input type="submit" style="width : 95px; height: 30; background-color: #00c200; font-size: 15px;"
+                    value="INGRESAR">
+                <input type="reset" style="width : 95px; height: 50; background-color: #c40000; font-size: 15px;"
+                    value="CANCELAR">
+                <br><br>
+
+                <a style="color: black;" href="#">Registrarse</a><br><br>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

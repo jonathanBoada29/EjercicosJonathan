@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <style>
+        .container{
+            text-align: center;
+            background-color: aqua;
+            width: 500px;
+        }
+
+    </style>
+
+    <div class = "container">
+        <h2> FORMULARIO DE CONTACTO</h2>
+        <div class = "row col-md-8 offset-md-2">
+
+            <form class="was-validated">
+                <label  for="i_nombre">Nombre *</label>
+                <br>
+                <input  type="text" id="i_nombre" required>
+
+                <br>
+
+                <label for="i_correo">Correo Electrónico *</label>
+                <br>
+                <input type="text" id="i_correo" required>
+
+                <br>
+
+                <label class="form-label" for="comentario">Comentario</label>
+                <br>
+                <textarea class="form-control" id="comentario" cols="30" rows="10" required></textarea>
+
+                <div class="form-check mt-3 ">
+                    <input class="form-check-input" type="checkbox" id="term" required>
+                    <label class="form-check-label" for="term">
+                        Acepto los <a href="#">Términos y Condiciones</a>
+                    </label>
+                </div>
+
+                <br>
+
+                <div class="text-center">
+                    <input  type="submit" value="ENVIAR">
+                    <input type="reset" value="CANCELAR">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

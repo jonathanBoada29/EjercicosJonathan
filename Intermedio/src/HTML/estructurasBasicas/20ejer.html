@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 89, 89);
+        }
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            margin-left: 3em;
+            border-collapse: collapse;
+            width: 900px;
+        }
+
+        .header {
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .header.nav-links {
+            list-style: none;
+
+        }
+
+        .header .nav-links li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .header .nav-links li:hover {
+            transform: scale(1.1);
+        }
+
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 6em;
+            right: 1em;
+            width: 12em;
+            text-align: center;
+            border: solid black;
+            background-color: rgb(255, 255, 255);
+            ;
+            border-radius: 20px;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <div style="width: 100%;">
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="camara.png" alt="">
+                <h1>
+                    <span>
+                        Pelis
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        Mejores
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+
+                    <input style="border-radius: 5px; " type="search" placeholder="Buscar peliculas...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="Whatsapp_logo.svg.png" alt="">
+            </div>
+        </header>
+        <div style="width: 78%; background-color: rgb(0, 0, 0);">
+
+
+            <div style="padding: 10px;">
+                <table>
+                    <tr>
+                        <td>
+                            <h1 style="color: white; padding-left: 10px">ONE PIECE</h1>
+                            <br><br>
+
+                            <div style=" text-align: justify;">
+                                <div style="display: flex;">
+                                    <img height="500px" width="500px" src="onepiece.jpg" alt="" >
+                                    <p style=" color: white; padding-left: 10px;">  
+                                        La historia de One
+                                        Piece narra las aventuras de una tripulación de piratas que se embarcan para encontrar un tesoro denominado el
+                                        One Piece. Si bien la mayoría de los personajes son navegantes, estos se distinguen de la
+                                        Marina, que es una organización encargada de controlar y mantener apaciguados a los
+                                        piratas que causan estragos en islas, pueblos y ciudades neutrales; sin embargo, en
+                                        la
+                                        serie se muestra que el Gobierno Mundial, la organización que administra a la
+                                        Marina, se
+                                        encuentra bajo la corrupción y la manipulación. Asimismo, la serie incluye a
+                                        diversos
+                                        personajes que poseen diferentes habilidades y poderes. El mundo de One Piece está
+                                        habitado por seres humanos, incluidos diversos tipos de razas exóticas como los
+                                        hombres-pez (魚人 Gyojin?, "Tritones" en la versión española del anime) —humanoides
+                                        híbridos que tienen apariencia de pez—, sirenas, gigantes, enanos, los mink (ミンク
+                                        Minku?)</p>
+                                </div>
+                                <p style="color: white;">—animales antropomórficos compuestos solo de animales con pelaje—, los brazos
+                                    largos, o
+                                    los piernas largas, además de variedades de animales ficticios. Parte de los
+                                    personajes
+                                    que aparecen están basados en algunos célebres piratas y figuras históricas de la
+                                    vida
+                                    real, o también en otros personajes de otras obras de ficción</p>
+                                <br><br>
+                                <h2 style="color: white;">Actores:</h2><br>
+
+                                <p style="color: white;">Monkey D. Luffy<br>
+                                    Roronoa Zoro<br>
+                                    Nami<br>
+                                    Usopp<br>
+                                    Sanji<br>
+                                    Nico Robin<br>
+                                    Franky<br>
+                                    Jinbe<br>
+                                </p>
+                                <br>
+
+                                <h2 style="color: white;">DIRECTOR: Jonathan Hernando Boada Patiño</h2>
+                                <br><br>
+                                <a href="#" class="btn"><button
+                                        style="padding-left: 10px; background-color: #ffa2a2;">VER</button></a>
+                            </div>
+                        </td>
+
+                </table>
+            </div>
+        </div>
+        <div style="width: 22%; ">
+            <ul class="nav-links">
+
+                <h2>Iniciar Sesión</h2>
+                <br>
+                <label for="i_email">Email</label>
+                <br>
+                <input type="text" style="width : 175px; height: 30;" id="i_email" placeholder="Usuario" required>
+                <label for="i_contraseña">Contraseña</label>
+                <input type="password" style="width : 175px; height: 30;" id='i_contraseña' placeholder="Contraseña"
+                    required>
+                <br><br>
+                <input type="submit" style="width : 95px; height: 30; background-color: #00c200; font-size: 15px;"
+                    value="INGRESAR">
+                <input type="reset" style="width : 95px; height: 50; background-color: #c40000; font-size: 15px;"
+                    value="CANCELAR">
+                <br><br>
+
+                <a style="color: black;" href="#">Registrarse</a><br><br>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

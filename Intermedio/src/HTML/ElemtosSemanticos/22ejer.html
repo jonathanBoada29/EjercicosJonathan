@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+<html>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(205, 205, 205);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+            
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .articulo {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .article {
+            width: 113px;
+            height: 113px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background-color: #eee;
+            height: 50px;
+
+        }
+
+        nav h1 {
+            float: left;
+            list-style: none;
+            margin: 20px;
+            color: rgb(0, 0, 0);
+            font-size: 26px;
+            line-height: 30px;
+
+        }
+
+        .derecha {
+            position: absolute;
+            top: 6em;
+            right: 1em;
+            width: 15em;
+            text-align: center;
+            border: solid black;
+            background-color: rgb(205, 205, 205);
+            border-radius: 20px;
+            padding-top: 40px;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/periodo.png" alt="">
+                <h1>
+                    <span>
+                        AGENDA
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        DE CITAS
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Dia...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div>
+                <button>
+                    <label for="Menu">Mes</label>
+                    <select name="menu" id="menu">
+                        <option value="Enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+
+        <div style="width: 100%;" class="todo">
+            <div style="background-color: #eee; padding: 10px; padding-left: 350px; ">
+                <h1>OCTUBRE</h1>
+            </div>
+            <nav>
+                <div class="a">
+                    <h1>Lunes</h1>
+                    <h1>Martes</h1>
+                    <h1>Miércoles</h1>
+                    <h1>Jueves</h1>
+                    <h1>Viernes</h1>
+                    <h1>Sábado</h1>
+                    <h1>Domingo</h1>
+
+                </div>
+            </nav>
+            <div style="background-color: #eee;">
+                <br>
+            </div>
+            <div class="division">
+
+                <div class="forecast" style="display:flex;">
+
+                    <article style="color: #b7acac; background-color: #dedede;" class="day-forecast article">
+                        <h2>28 <br> </h2>
+                    </article>
+                    <article style="color: #b7acac; background-color: #dedede;" class="day-forecast article">
+                        <h2>29 <br> </h2>
+                    </article>
+                    <article style="color: #b7acac; background-color: #dedede;" class="day-forecast article">
+                        <h2>30 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>01 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>02 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>03 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>04 <br> </h2>
+                    </article>
+
+
+                </div>
+                <div class="articulo" style="display:flex;">
+
+                    <article class="day-forecast article">
+                        <h2>05 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>06 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>07 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>08 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>09 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>10 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>11 <br> </h2>
+                    </article>
+
+                </div>
+
+
+                <div class="articulo" style="display:flex;">
+
+                    <article class="day-forecast article">
+                        <h2>12 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>13 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>14 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>15 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>16 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>17 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>18 <br> </h2>
+                    </article>
+
+                </div>
+                <div class="articulo" style="display:flex;">
+
+                    <article class="day-forecast article">
+                        <h2>19 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>20 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>21 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>22 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>23 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>24 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>25 <br> </h2>
+                    </article>
+
+
+                </div>
+
+                <div class="articulo" style="display:flex;">
+                    <article class="day-forecast article">
+                        <h2>26 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>27 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>28 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>29 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>30 <br> </h2>
+                    </article>
+                    <article class="day-forecast article">
+                        <h2>31 <br> Dia de Halloween</h2>
+                    </article>
+                    <article style="color: #b7acac; background-color: #dedede;" class="day-forecast article">
+                        <h2>01 <br> </h2>
+                    </article>
+                </div>
+            </div>
+
+            <div style="width: 22;">
+                <ul class="derecha">
+                    <h2>AGREGAR</h2>
+                    <br>
+                    <label for="i_email">AGREGAR EVENTO</label>
+                    <br>
+                    <input type="text" style="width : 175px; height: 30;" id="i_email" required> <BR></BR>
+                    <label for="i_contraseña">DIA DE EVENTO</label>
+                    <input type="password" style="width : 175px; height: 30;" id='i_contraseña' required>
+                    <br><br>
+                    <input type="submit" style="width : 95px; height: 30; background-color: #b7acac; font-size: 15px;"
+                        value="GUARDAR">
+                    <input type="reset" style="width : 95px; height: 50; background-color: #b7acac; font-size: 15px;"
+                        value="CANCELAR">
+                    <br><br>
+
+                    <a style="color: black;" href="#">Registrarse</a><br><br>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <footer class="redes" style=" background-color: #eee; text-align: center; ">
+
+            <h1> Jonathan Boada &copy;</h1>
+
+        </footer>
+    </body>
+
+</html>

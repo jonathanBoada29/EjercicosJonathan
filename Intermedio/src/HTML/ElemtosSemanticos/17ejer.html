@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noticias</title>
+</head>
+<h>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(205, 205, 205);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .articulo {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .article {
+            width: 400px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/periodo.png" alt="">
+                <h1>
+                    <span>
+                        NOTICIAS
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        MUNDIALES
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Noticia...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="Colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+
+
+        <div class="forecast" style="display:flex;">
+
+            <article class="day-forecast article">
+
+                <h2>Marc Guiu: debutó a sus 17 años con el Barcelona y a los 33 segundos marcó gol</h2>
+                <img style="height: 270px ; width: 380px;" src="imagenes/barcelona.jpeg" alt="">
+                <p> El nombre del juvenil Marc Guiu (Santa Maria de Palautordera, Barcelona, 2006), el protagonista
+                    inesperado que dio la victoria al primer equipo del Barça frente al Athletic Club (1-0), nunca fue
+                    considerado un talento diferencial en La Masia, pero sus entrenadores siempre han valorado sus
+                    características de '9' clásico.</p>
+            </article>
+            <article class="day-forecast article">
+
+                <h2>El jugador sufrió un fuerte accidente de tránsito tras la caída de un poste de media tonelada. </h2>
+                <img style="height: 270px ; width: 380px;" src="imagenes/liverpool.png" alt="">
+
+                <p> Un verdadero susto se llevó un compañero del colombiano Luis Díaz en el Liverpool de Inglaterra, un
+                    poste de más de media tonelada estuvo cerca de arrebatarle la vida a una estrella del fútbol mundial
+                    en una carretera de Reino Unido.</p>
+
+            </article>
+
+            <article class="day-forecast article">
+
+                <h2>Linda Caicedo recibió sensacional regalazo de un patrocinador del Real Madrid </h2>
+                <img style="height: 270px ; width: 380px;" src="imagenes/caicedo.jpeg" alt="">
+
+                <p> Mientras Linda Caicedo sigue llenando de orgullo el fútbol femenino de Colombia por sus grandes
+                    actuaciones en el Real Madrid y con la camiseta de la Selección Colombia, los patrocinadores del
+                    equipo español le dieron un tremendo regalo. </p>
+
+            </article>
+
+        </div>
+
+        <footer class="redes">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/redes.png" alt="">
+
+                    <h1>Síguenos en <br>nuestras redes</h1>
+                </div>
+                <div style="margin-right: 40%;">
+                    <p>⚠️ Acepto Términos y Condiciones</p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+
+</html>

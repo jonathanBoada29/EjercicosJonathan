@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+<h>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(255, 179, 179);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .articulo {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .article {
+            width: 400px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/sarten.png" alt="">
+                <h1>
+                    <span>
+                        RECETAS
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        DE COCINA
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Recetas...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="Colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+        <div style=" display: flex; text-align: justify ; background-color: white;">
+            <div style="padding: 10px;">
+                <table>
+                    <tr>
+                        <td> <img height="200px" width="200px" src="imagenes/pollo.jpg" alt=""></td>
+                        <td>
+                            <h1 style="padding-left: 10px">POLLO SUDADO</h1>
+                            <br>
+                            <h2>Ingredientes</h2>
+                            <br>
+                            <p style="padding-left: 10px;">
+                                <li type="circle">1 cucharada de aceite vegetal (14 g).</li>
+                                <li type="circle">1 diente de ajo triturado (3 g)</li>
+                                <li type="circle">1 tomate sin piel finamente picado (123 g)</li>
+                                <li type="circle">2 tallos de cebolla larga finamente picada (30 g)</li>
+                                <li type="circle">4 piernas de pollo (800 g)</li>
+                                <li type="circle">1 taza de agua (250 ml)</li>
+                                <li type="circle">1 libra de papa pastusa, pelada y partida a la mitad (500 g)</li>
+                                <li type="circle">1 sobre de CALDO DE GALLINA MAGGI® desmenuzado (9 g)</li>
+                            </p>
+                            <br><br>
+                            <p>PASO 1 Prepara el guiso
+
+                                1. En una olla de fondo alto sofríe con el aceite bien caliente el ajo, el tomate y la
+                                cebolla por 4 minutos.<br><br>
+                                PASO 2 Adiciona ingredientes
+
+                                2. Agrega el pollo, el agua, la papa y el sobre de CALDO DE GALLINA MAGGI® DESMENUZADO.<br><br>
+                                PASO 3 Cocina el sudado
+
+                                3. Tapa la olla y deja a fuego medio por 20 minutos o hasta que cocine completamente.<br><br>
+                                PASO 4 Sirve
+
+                                4. Pasado el tiempo retira del fuego, sirve y acompaña con la ensalada.</p><br><br>
+
+                            <a href="10ejer.html" class="btn"><button
+                                    style="background-color: rgb(255, 137, 137); padding-left: 10px;">Volver</button></a>
+                        </td>
+                </table>
+            </div>
+        </div>
+        <footer class="redes">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/redes.png" alt="">
+
+                    <h1>Síguenos en <br>nuestras redes</h1>
+                </div>
+                <div style="margin-right: 40%;">
+                    <p>⚠️ Acepto Términos y Condiciones</p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+
+</html>
+</body>
+
+</html>

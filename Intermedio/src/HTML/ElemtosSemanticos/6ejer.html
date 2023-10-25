@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+<h>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(255, 135, 135);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        p,
+        dt {
+            font-weight: bold;
+        }
+
+        dl,
+        dd {
+            font-size: 0.9rem;
+        }
+
+        dd {
+            margin-bottom: 1em;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/balon1.png" alt="">
+                <h1>
+                    <span>
+                        MUNDO
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        FUTBOL
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Equipo...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="Colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+
+        <div>
+            <p>Mejores equipos de Colombia</p>
+            <br>
+            <dl>
+                <dt>America de cali</dt>
+                <dd>15 titulos</dd>
+
+                <dt>Atlético Nacional</dt>
+                <dd>32 titulos</dd>
+
+                <dt>Cucuta</dt>
+                <dd>1 Titulo</dd>
+            </dl>
+
+            
+        </div>
+        <footer class="redes">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/redes.png" alt="">
+
+                    <h1>Síguenos en <br>nuestras redes</h1>
+                </div>
+                <div style="margin-right: 40%;">
+                    <p>⚠️ Acepto Términos y Condiciones</p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+
+</html>

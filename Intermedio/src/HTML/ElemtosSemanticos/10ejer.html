@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tecnología</title>
+</head>
+<h>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito', sans-serif;
+            font-size: 20px;
+        }
+
+
+        .centerA_thing {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(255, 179, 179);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            padding: 5px 10%;
+
+            width: 100%;
+        }
+
+        .header .logo {
+            cursor: pointer;
+
+        }
+
+        .header .logo img {
+            height: 70px;
+            width: auto;
+            transition: all 0.3;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .col {
+            border-left: 1px solid black;
+        }
+
+        .header .Whatsapp {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3;
+        }
+
+        .header .Whatsapp:hover {
+            transform: scale(1.2);
+        }
+
+        .forecast {
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .forecast>h1,
+        .day-forecast {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+        }
+
+        .day-forecast>h2,
+        .day-forecast>p {
+            margin: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .articulo{
+            margin: 0;
+            padding: 0.3rem;
+            background-color: #eee;
+        }
+
+        .article {
+            width: 400px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="logo centerA_thing">
+                <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/sarten.png" alt="">
+                <h1>
+                    <span>
+                        RECETAS
+                    </span>
+                    <br>
+                    <span style="margin-left: 10px;">
+                        DE COCINA
+                    </span>
+                </h1>
+            </div>
+            <div class="search">
+                <p>
+                    <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Recetas...">
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+
+            <div class="Whatsapp">
+                <img height="50px" width="150px" src="imagenes/Whatsapp_logo.svg.png" alt="">
+            </div>
+            <div>
+                <button>
+                    <label for="Menu">Menu</label>
+                    <select name="menu" id="menu">
+                        <option value="Colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+
+        
+        <div class="forecast" style="display:flex;">
+            
+            <article class="day-forecast article">
+
+                <tr>
+                    <td> <img height="200px" width="300px" src="imagenes/pollo.jpg" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">POLLO SUDADO</h1>
+                        <p style="padding-left: 10px;">Te gusta, te enseño hacerlo!!</p>
+                        <br>
+
+                        <a href="pollo.html" class="btn"><button
+                                style="background-color: rgb(255, 137, 137); padding-left: 10px;">Ver
+                                receta</button></a>
+                    </td>
+                </tr>
+            </article>
+            <article class="day-forecast article">
+
+                <tr>
+                    <td> <img height="200px" width="300px" src="imagenes/empanada.jpg" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">Empanadas Colombianas</h1>
+                        <p style="padding-left: 10px;">Las mejores empanadas colombianas, te enseño!!</p>
+                        
+
+                        <a href="empanada.html" class="btn"><button
+                                style="background-color: rgb(255, 137, 137); padding-left: 10px;">Ver
+                                receta</button></a>
+                    </td>
+                </tr>
+            </article>
+            <article class="day-forecast article">
+
+                <tr>
+                    <td> <img height="200px" width="300px" src="imagenes/pizza.jpeg" alt=""></td>
+                    <td>
+                        <h1 style="padding-left: 10px">Pizza</h1>
+                        <p style="padding-left: 10px;">Aprende a preparas la pizza triple queso con salami la mejor
+                            del mundo!! </p>
+                        
+
+                        <a href="pizza.html" class="btn"><button
+                                style="background-color: rgb(255, 137, 137); padding-left: 10px;">Ver
+                                receta</button></a>
+                    </td>
+                </tr>
+
+            </article>  
+        </div>
+       
+
+
+        <footer class="redes">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/redes.png" alt="">
+
+                    <h1>Síguenos en <br>nuestras redes</h1>
+                </div>
+                <div style="margin-right: 40%;">
+                    <p>⚠️ Acepto Términos y Condiciones</p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+
+</html>

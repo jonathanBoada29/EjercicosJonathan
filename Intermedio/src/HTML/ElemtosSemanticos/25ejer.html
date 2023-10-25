@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Equipo</title>
+</head>
+
+<style>
+    body {
+        background: url(imagenes/fondopantalla.jpeg);
+    }
+
+    .header {
+        background-color: rgb(42, 42, 42);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .header .logo {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .header .logo img {
+        height: 120px;
+        width: 130px;
+        transition: all 0.3;
+    }
+
+    .header .logo img:hover {
+        transform: scale(1.2);
+    }
+
+    .header .Whatsapp {
+        cursor: pointer;
+        margin-right: 10px;
+        transition: all 0.3;
+    }
+
+    .header .Whatsapp:hover {
+        transform: scale(1.2);
+    }
+
+    .skills {
+
+        color: #fff;
+        padding: 50px 20px;
+        width: 100%;
+    }
+
+    .skills .contenido-seccion {
+        width: 80%;
+        margin: auto;
+    }
+
+    .skills h2 {
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .skills .fila {
+        display: flex;
+    }
+
+    .skills .fila .col {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .skills .fila .col h3 {
+        font-size: 28px;
+        font-family: 'Righteous';
+        margin-bottom: 25px;
+    }
+
+    .skills .skill>span {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+
+    }
+
+    .skills .skill .barra-skill {
+        height: 5px;
+        width: 50%;
+        background-color: #ffffff;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .skills .skill .progreso {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 8px;
+        
+    }
+
+    .skills .skill .barra-skill span {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        border: 5px;
+        line-height: 70px;
+        text-align: center;
+        top: -17px;
+        right: -15px;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+
+
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="logo centerA_thing">
+            <img style="margin-right: 10px;" height="90px" width="90px" src="imagenes/Musica.webp" alt="">
+            <h1 style="color: #ffffff;">
+                <span>
+                    REPRODUCTOR
+                </span>
+                <br>
+                <span style="margin-left: 10px;">
+                    DE MUSICA
+                </span>
+            </h1>
+        </div>
+        <div class="search">
+            <p>
+                <input style="border-radius: 30px; height: 50px;" type="search" placeholder="Buscar Canción...">
+                <input type="submit" value="Buscar">
+
+            </p>
+        </div>
+
+        <div>
+            <button>
+                <label for="Menu">Genero</label>
+                <select name="menu" id="menu">
+                    <option value="Enero">Reguetón</option>
+                    <option value="febrero">Merengue</option>
+                    <option value="Marzo">Salsa</option>
+                    <option value="Abril">Bachata</option>
+                    <option value="Mayo">Vallenato</option>
+
+                </select>
+            </button>
+        </div>
+    </header>
+
+    <div class="skills">
+        <div class="col">
+            <h1>Mi lista</h1>
+            <div class="skill">
+                <span> &nap;&nap;&nap; Ed Sheeran - photograph // sub español</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span><img style="width: 20px; height: 20px; align-items: center;" src="imagenes/reproduccion.png"
+                                    alt=""></span>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <div class="skill">
+                <span>&nap;&nap;&nap;Passenger | Let Her Go (Official Video)</span>
+                <div class="barra-skill">
+                    <div class="progreso trabajo">
+                        <span><img style="width: 20px; height: 20px; align-items: center;" src="imagenes/reproduccion.png"
+                            alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>&nap;&nap;&nap;Adele - Set fire to the rain (Traducida al Español)</span>
+                <div class="barra-skill">
+                    <div class="progreso creatividad">
+                        <span><img style="width: 20px; height: 20px; align-items: center;" src="imagenes/reproduccion.png"
+                            alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span> &nap;&nap;&nap;Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack</span>
+                <div class="barra-skill">
+                    <div class="progreso dedicación">
+                        <span><img style="width: 20px; height: 20px; align-items: center;" src="imagenes/reproduccion.png"
+                            alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>&nap;&nap;&nap;Bruno Mars - Locked Out Of Heaven (Lyrics) Sub Español</span>
+                <div class="barra-skill">
+                    <div class="progreso proyect">
+                        <span><img style="width: 20px; height: 20px; align-items: center;" src="imagenes/reproduccion.png"
+                            alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="redes" style=" color: #eee; text-align: center; ">
+
+        <h1> Jonathan Boada &copy;</h1>
+
+    </footer>
+
+</body>
+
+</html>
