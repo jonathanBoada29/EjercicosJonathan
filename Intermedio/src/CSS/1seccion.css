@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(150, 255, 142);
+}
+
+.titulo h1 {
+    text-align: center;
+    background-color: green;
+}
+
+.encabezado {
+    display: flex;
+    cursor: pointer;
+}
+
+.encabezado li {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 35px;
+    color: black;
+}
+
+.encabezado li:hover {
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+
+.encabezado h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(26, 255, 0);
+}
+
+.destacado {
+    text-align: center;
+}
+
+.destacado a {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.destacado a:hover {
+    background-color: rgb(21, 255, 0);
+}
+
+.destacado img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.lista {
+    text-align: left;
+    justify-content: center;
+    display: flex;
+}
+
+.caja {
+    background-color: rgb(108, 255, 113);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.caja button {
+    border-radius: 10px;
+    background-color: green;
+    width: 100px;
+    height: 50px;
+}
+
+.caja button a {
+    text-decoration: none;
+    color: black;
+}
+
+.caja button:hover {
+    background-color: rgb(0, 255, 38);
+}
+
+.todo {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+
+}
+
+.tarjeta {
+    background: #00e20f;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.tarjeta h1 {
+    font-size: 25px;
+    color: #000000;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.imagen img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.imagen{
+    text-align: center;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
