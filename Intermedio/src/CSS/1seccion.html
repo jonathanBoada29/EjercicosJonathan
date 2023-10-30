@@ -12,77 +12,191 @@
 
 <body>
 
-    <div class="titulo">
-        <h1>One Piece</h1>
-    </div>
-    <ul class="encabezado">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Personajes</a></li>
-        <li><a href="#">Libros</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
+    <div style="width: 100%;" class="container">
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">ONE PIECE</a>
 
-
-
-    <div class="destacado">
-
-        <img src="imagenes/zoro.jpg" alt=""> <br>
-        <a href="https://www.youtube.com/watch?v=DdqFUSAzjDY"> "Historia" </a>
-        <div class="lista">
-            <ol>
-                <li>Primer comandante de la flota de los mugiwara</li>
-                <li>Espadachín</li>
-                <li>Primer miembro en unirse</li>
-                <li>Tres espadas legendarias</li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="caja">
-        <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro?), conocido como El Cazador de Piratas (海賊狩り Kaizoku Gari?), es
-            el combatiente principal de los Piratas de Sombrero de Paja, uno de sus dos espadachines y uno de los
-            oficiales principales de la Gran Flota de Sombrero de Paja, así como un antiguo cazarrecompensas.</p>
-
-        <button> <a href="https://onepiece.fandom.com/es/wiki/Roronoa_Zoro">ZORO</a></button>
-    </div>
-
-    <div class="todo">
-        <div class="tarjeta">
-            <h1>Zoro <br> Tarjeta de pelea</h1>
-            <h2 style="text-align: center;" id="subtitulo">Espadachín</h2>
-            <div class="restoTerjeta">
-                <div class="imagen">
-                    <img src="imagenes/zoro.jpg" alt="">
                 </div>
-                <div id="answer-p">
-                    <p>
-                        Roronoa Zoro, también conocido como "El Cazador de Piratas Roronoa Zoro", es uno de los
-                        personajes
-                        principales del manga One Piece. Fue el primer miembro en unirse a Luffy como tripulante,
-                        convirtiéndose en el combatiente de la tripulación, ​​​ y uno de sus dos espadachines, siendo el
-                        otro Brook
-                    </p>
-                    <div class="poder">
-                        <h1>PODER:</h1>
-                        <h2>1.000.000</h2>
-                        <br> <br>
-                        <h1>Velocidad:</h1>
-                        <h2>900.000</h2>
+                <nav id="nav" class="responsive">
+                    <ul>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#sobremi">TRIPULACIÓN</a></li>
+                        <li><a href="#skills">INTEGRANTES</a></li>
+                    </ul>
+                </nav>
+
+                <button style="background-color: white; border: 2px solid #e7e7e7;" id="theme-toggle">CAMBIO DE TEMA</button>
+
+                <div class="dropdown">
+                    <button class="dropdown-button">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">Opción 1</a>
+                        <a href="#" class="dropdown-item">Opción 2</a>
+                        <a href="#" class="dropdown-item">Opción 3</a>
                     </div>
-
-                    <label for="file">Progreso del personaje:</label>
-
-                    <progress id="file" max="100" value="70">70%</progress>
-
-
-
                 </div>
+            </header>
 
+        </div>
+
+        <div class="content">
+            <div style="width: 80%;" class="primerParte">
+                <section id="inicio" class="inicio">
+                    <div class="contenido-banner">
+                        <div class="contenedor-img">
+                            <img src="imagenes/zoro.jpg" alt="">
+                        </div>
+                        <h1>Roronoa Zoro</h1>
+                        <h2>PRIMER COMANDANTE DE LA TRIPULACION DE LOS MUGIWARASS</h2>
+                    </div>
+                </section>
+
+                <div style="width: 20;">
+                    <div class="derecha">
+                        <h2>SESIÓN</h2>
+
+                        <label for="i_email">INICIAR SESIÓN</label>
+
+                        <input type="text" style="width : 175px; height: 30;" id="i_email" required>
+                        <label for="i_contraseña">CONTRASEÑA</label>
+
+                        <input type="password" style="width : 175px; height: 30;" id='i_contraseña' required>
+
+                        <input type="submit"
+                            style="width : 95px; height: 30; background-color: #7aff7a; font-size: 15px;  cursor: pointer;"
+                            value="GUARDAR">
+                        <input type="reset"
+                            style="width : 95px; height: 50; background-color: #7aff7a; font-size: 15px; cursor: pointer;"
+                            value="CANCELAR">
+
+                        <a style="color: black;" href="#">Registrarse</a><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja">
+                <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro?), conocido como El Cazador de Piratas (海賊狩り Kaizoku Gari?), es
+                    el combatiente principal de los Piratas de Sombrero de Paja, uno de sus dos espadachines y uno de
+                    los
+                    oficiales principales de la Gran Flota de Sombrero de Paja, así como un antiguo cazarrecompensas.
+                </p>
+
+                <button> <a href="https://onepiece.fandom.com/es/wiki/Roronoa_Zoro">ZORO</a></button>
+            </div>
+
+            <div class="tarjeta">
+                <h1>Zoro <br> Tarjeta de pelea</h1>
+                <h2 style="text-align: center;" id="subtitulo">Espadachín</h2>
+                <div class="restoTerjeta">
+                    <div class="imagen">
+                        <img src="imagenes/zoro.jpg" alt="">
+                    </div>
+                    <div id="answer-p">
+                        <p>
+                            Roronoa Zoro, también conocido como "El Cazador de Piratas Roronoa Zoro", es uno de los
+                            personajes
+                            principales del manga One Piece. Fue el primer miembro en unirse a Luffy como tripulante,
+                            convirtiéndose en el combatiente de la tripulación, y uno de sus dos espadachines,
+                            siendo el
+                            otro Brook
+                        </p>
+                        <div class="poder">
+                            <h1>PODER:</h1>
+                            <h2>1.000.000</h2>
+                            <br> <br>
+                            <h1>Velocidad:</h1>
+                            <h2>900.000</h2>
+                        </div>
+
+                        <label for="file">Progreso del personaje:</label>
+
+                        <br>
+
+                        <progress id="file" max="100" value="70">70%</progress>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="table">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monky D. Luffy</td>
+                            <td>19</td>
+                            <td>Capitan de los sombreros de paja</td>
+                        </tr>
+                        <tr>
+                            <td>Roronoa Zoro</td>
+                            <td>21</td>
+                            <td>Primer comandante y espadachín de la tripulación los sombreros de paja</td>
+                        </tr>
+                        <tr>
+                            <td>Vinsmoke Sanji</td>
+                            <td>21</td>
+                            <td>Segundo comandante y cocinero de la tripulación los sombreros de paja</td>
+                        </tr>
+                        <tr>
+                            <td>Usopp</td>
+                            <td>19</td>
+                            <td>Franco tirador de los sombreros de paja </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="gallery">
+                <div class="thumbnail">
+                    <img style="height: 200px; width: 200px;" src="imagenes/Luffy.webp" alt="Imagen 1">
+                </div>
+                <div class="thumbnail">
+                    <img style="height: 200px; width: 200px;" src="imagenes/zoro.jpg" alt="Imagen 2">
+                </div>
+                <div class="thumbnail">
+                    <img style="height: 200px; width: 200px;" src="imagenes/Sanji.png" alt="Imagen 3">
+                </div>
+                <div class="thumbnail">
+                    <img style="height: 200px; width: 100px;" src="imagenes/usopp.png" alt="Imagen 4">
+                </div>
+            </div>
+
+            <div id="lightbox" class="hidden">
+                <span class="close-button" onclick="closeLightbox()">
+                    <h2>X</h2>
+                </span>
+                <img src="" alt="Imagen 1">
+
+            </div>
+
+
+            <div class="comment-box">
+                <h2>Deja un comentario</h2>
+                <form id="comment-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" required></textarea>
+
+                    <button type="submit">Enviar Comentario</button>
+                </form>
             </div>
         </div>
 
+        <script src="1seccion.js"></script>
     </div>
-
 
 </body>
 
