@@ -1,0 +1,64 @@
+.contenido{
+        background-image: url(imagenes/computadora.jpg); 
+}
+
+.contenido h1{
+    color: aqua;
+    text-align: center;
+}
+
+.contenido p{
+    font-size: 18px;
+    text-transform:uppercase;
+}
+.lista{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imagen{
+
+    text-align: center;
+
+}
+.imagen img{
+    width: 200px;
+    height: 200px;
+}
+
+.contenido .enlaces{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.enlaces .a:hover{
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.styled-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    
+}
+
+.styled-table th{
+    background-color: #6e0087;
+}
+
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #6e0087;
+}
+.miBoton:active{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}

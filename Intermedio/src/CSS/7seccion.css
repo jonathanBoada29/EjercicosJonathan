@@ -1,0 +1,143 @@
+.be a:hover {
+    color: #FF0000; 
+}
+
+ul li:first-child {
+    background-color: #888; 
+}
+
+ol li:last-child {
+    text-decoration: underline; 
+}
+p::first-letter {
+    font-size: 24px; 
+    color: red; 
+}
+
+.icon-flecha::before {
+    content: "→"; 
+    margin-right: 5px; 
+}
+
+.a a:active {
+    background-color: yellow; 
+}
+
+.lista ul li:last-child {
+    border: 2px solid green; 
+}
+
+.lista1 ol li:nth-child(odd) {
+    color: #FF0000; 
+}
+
+input[type="text"]::placeholder {
+    color: #FF0000; 
+}
+
+.destacado p {
+    background-color: #FFFF00;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+nav a:hover {
+    color: #FF0000; 
+}
+
+nav a:active {
+    text-decoration: underline; 
+}
+
+.desvanecer ul li {
+    transition: 0.3s; 
+    color: #000; 
+}
+
+.desvanecer ul li:hover {
+    opacity: 0.5; 
+    color: #FF0000; 
+}
+
+.desvanecer ul li:active {
+    color: #00FF00; 
+}
+
+img {
+    transition: 0.3s; 
+}
+
+img:hover {
+    filter: blur(3px); 
+}
+
+img:active {
+    filter: none; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #FFFFCC; 
+    border: 1px solid #FFD700; 
+}
+
+label::after {
+    content: " (requerido)";
+    color: #FF0000; 
+}
+
+input[required]::after,
+textarea[required]::after {
+    content: " *";
+    color: #FF0000; 
+}
+
+tr:nth-child(even) {
+    background-color: #E0E0E0; 
+}
+
+
+tr:nth-child(odd) {
+    background-color: #D0D0D0; 
+}
+
+ul li {
+    list-style: none; 
+    position: relative; 
+    padding-left: 20px; 
+}
+
+
+ul li:nth-child(1)::before {
+    content: "🌟"; 
+    color: #FFD700; 
+    position: absolute;
+    left: 0; 
+}
+
+ul li:nth-child(2)::before {
+    content: "🔵"; 
+    color: #0000FF; 
+    position: absolute;
+    left: 0; 
+}
+
+ul li:nth-child(3)::before {
+    content: "🌻"; 
+    color: #FFA500; 
+    position: absolute;
+    left: 0; 
+}

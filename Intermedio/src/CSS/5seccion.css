@@ -1,0 +1,185 @@
+.elemento {
+    width: 100px;
+    height: 50px; 
+    background-color: #3498db;
+}
+.elemento1 {
+    width: 50vw; 
+    height: 100px; 
+    background-color: #3498db; 
+}
+
+.padre {
+    font-size: 16px; 
+}
+
+.hijo {
+    width: 2em; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.abuelo {
+    width: 50%; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.madre {
+    width: 100%; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.padres {
+    width: 300px; 
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.elementos {
+    width: 100%; 
+    background-color: #3498db; 
+    padding: 10px;
+}
+
+.alto {
+    height: 100px; 
+    width: 50%;
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.alto1 {
+    font-size: 16px; 
+}
+
+.altito {
+    height: 2em; 
+    background-color: #3498db; 
+    padding: 10px;
+}
+
+.alto2 {
+    height: 200px; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.altito1 {
+    height: 100%; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.alto3 {
+    height: 200px; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.altito2 {
+    height: auto; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.inter {
+    width: 5.2083%; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.ancho {
+    width: 50vw; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+
+.cont {
+    max-width: 100%; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.element {
+    width: 100%; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.hereda {
+    width: 200px; 
+}
+
+.heredado {
+    width: inherit; 
+    min-width: 100px; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+ 
+.casi {
+    height: 100px; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.yacasi {
+    height: 50vh; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.super {
+    font-size: 14px; 
+}
+
+.ya {
+    height: 1.5em; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 16px) {
+    .ya {
+        height: 3em; 
+    }
+}
+
+.torcoroma {
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.torco{
+    max-height: 100vh; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}
+
+.torcoroma1 {
+    height: 80px;
+}
+
+.torco1 {
+    height: inherit; 
+    min-height: 100px; 
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+}

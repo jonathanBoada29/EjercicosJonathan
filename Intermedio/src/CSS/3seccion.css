@@ -1,0 +1,168 @@
+.caja{
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;    
+    padding-bottom: 10px;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    margin: 30px;
+}
+.caja2{
+
+    height: 300px;
+    width: 100px;
+    border-radius: 30px 10px 20px 5px;
+    border: 2px solid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: linear-gradient(90deg, rgba(81,0,125,1) 0%, rgba(73,232,23,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+.caja3 {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0; 
+
+    box-shadow: 
+        5px 0 0 red, 
+        -5px 0 0 blue, 
+        0 5px 0 green, 
+        0 -5px 0 orange; 
+}
+
+.caja4 {
+    width: 200px;
+    height: 150px;
+    border-width: 10px; 
+    border-image-source: url(imagenes/zoro.jpg); 
+    border-image-slice: 10; 
+    border-image-width: 10px; 
+    border-image-outset: 5px; 
+}
+
+.caja5 {
+    width: 300px;
+    height: 200px;
+    border: 10px solid transparent; 
+    border-image-source: url(imagenes/zoro.jpg); 
+    border-image-slice: 10 fill; 
+    background-color: #f0f0f0; 
+}
+
+.caja6 {
+    width: 300px;
+    height: 200px; 
+    border: 10px solid transparent; 
+    border-image-source: url(imagenes/zoro.jpg); 
+    border-image-slice: 10; 
+    border-image-repeat: round; 
+    background-color: #f0f0f0; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.click {
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 10px solid transparent;
+    border-image-source: url(imagenes/zoro.jpg); 
+    border-image-slice: 10;
+    border-image-width: 10px;
+    animation: moveBorder 3s linear infinite;
+}
+
+@keyframes moveBorder {
+    0% {
+        border-image-source: url(imagenes/acapulco.webp);
+        transform: translate(0, 0);
+    }
+    25% {
+        border-image-source: url(imagenes/san\ andres.jpg);
+        transform: translate(10px, 0);
+    }
+    50% {
+        border-image-source: url(imagenes/HormigaFoto.jpg);
+        transform: translate(0, 10px);
+    }
+    75% {
+        border-image-source: url(imagenes/python.png);
+        transform: translate(-10px, 0);
+    }
+    100% {
+        border-image-source: url(imagenes/barcelona.jpeg);
+        transform: translate(0, -10px);
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: url(imagenes/zoro.jpg) center/cover no-repeat;
+    border: 2px solid transparent;
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.box:hover {
+    transform: translateX(-10px) translateY(-10px);
+    border-image: url(imagenes/acapulco.webp) 20 round;
+    border-image-slice: 20;
+    border-image-width: 2px;
+    border-image-outset: 0;
+    border-image-repeat: round;
+}
+
+.boxy {
+    width: 200px;
+    height: 200px;
+    background: url(imagenes/foto.png) center/cover no-repeat;
+    border: 2px solid transparent;
+    position: absolute;
+    transition: border-color 0.3s;
+}
+
+.boxy:hover {
+    border-color: #ff0000; 
+}
+
+.caja7 {
+    width: 200px;
+    height: 200px;
+    background: url(imagenes/barcelona.jpeg) center/cover no-repeat;
+    border: 2px solid transparent;
+    position: absolute;
+    transition: border-color 0.3s;
+}
+
+.caja7:hover {
+    border-color: transparent; 
+}
+
+.caja8 {
+    width: 200px;
+    height: 200px;
+    background: url(imagenes/san\ andres.jpg) center/cover no-repeat;
+    border: 2px solid transparent;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.caja8:hover {
+    transform: translateX(-10px) translateY(-10px); 
+    border-color: #ff0000; 
+}
