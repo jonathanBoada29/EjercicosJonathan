@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Proyectos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-deck {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .card-deck::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 30rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2>Tablero de Proyectos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 1</h5>
+                    <p class="card-text">Descripción del Proyecto 1.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción del Proyecto 2.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 3</h5>
+                    <p class="card-text">Descripción del Proyecto 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

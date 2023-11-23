@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control de Sensores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sensor-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .sensor-name {
+      font-weight: bold;
+    }
+    .sensor-status {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .sensor-ok {
+      color: green;
+    }
+    .sensor-warning {
+      color: orange;
+    }
+    .sensor-error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2>Panel de Control de Sensores</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sensor-card">
+          <div class="sensor-name">Sensor A</div>
+          <div class="sensor-status sensor-ok">Operativo</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sensor-card">
+          <div class="sensor-name">Sensor B</div>
+          <div class="sensor-status sensor-warning">Alerta</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sensor-card">
+          <div class="sensor-name">Sensor C</div>
+          <div class="sensor-status sensor-error">Error</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
