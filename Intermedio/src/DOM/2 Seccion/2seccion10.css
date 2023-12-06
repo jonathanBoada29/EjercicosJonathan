@@ -8,7 +8,7 @@ body {
     align-items: center;
     padding-top: 20px;
     margin: 0;
-    background: url(imagenes/teatro.jpg);
+    background: url(../imagenes/teatro.jpg);
     background-size: cover;
 }
 

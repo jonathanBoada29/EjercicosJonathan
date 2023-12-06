@@ -13,7 +13,7 @@ function showSeats() {
       ['', 'E2', 'E3', '', 'E5']
     ];
 
-    table.innerHTML = ''; 
+    table.innerHTML = '';  
     availableSeats.forEach(row => {
       const tr = document.createElement('tr');
       row.forEach(seat => {
