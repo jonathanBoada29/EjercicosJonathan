@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2seccion10.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="peliculas">
+        <h1>Reservas de Cine</h1>
+
+        <img src="imagenes/descarga (1).jpeg" alt="">
+        <br>
+        <div class="botones">
+            <select id="movies">
+                <option value="pelicula1">WOLVERINE</option>
+            </select>
+            <input type="date" id="datePicker">
+            <button id="buto" onclick="showSeats()">Mostrar Asientos</button>
+        </div>
+
+        <table id="seats"></table>
+        <div id="selectedSeats"></div>
+    </div>
+    <script src="2seccion10.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2seccion2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail" onclick="showImage('imagenes/gunsn.jpeg', 'Mejor Banda de Rock ')">
+          <img src="imagenes/gunsn.jpeg" alt="Miniatura 1">
+        </div>
+        <div class="thumbnail" onclick="showImage('imagenes/bruno.avif', 'Cantante')">
+          <img src="imagenes/bruno.avif" alt="Miniatura 2">
+        </div>
+      </div>
+    
+      <div class="full-image" id="fullImage">
+        <span class="close-btn" onclick="hideImage()">&times;</span>
+        <img src="" alt="Imagen completa">
+        <div class="description" id="imageDescription"></div>
+      </div>
+    
+    <script src="2seccion2.js"></script>
+</body>
+</html>

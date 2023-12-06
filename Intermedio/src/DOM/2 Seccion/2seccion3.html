@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="2seccion3.css">
+</head>
+
+<body>
+
+    <h1>Reproductor de Música</h1>
+ 
+    <div id="player">
+      <h2 id="songTitle">Canción Actual</h2>
+      <p id="artist">Artista</p>
+      <audio id="audioPlayer" controls>
+        <source src="audios/GunsNRoses.mp3" type="audio/mpeg">
+        <source src="audios/Locked Out Of Heaven.mp3" type="audio/mpeg">
+      </audio>
+      <div id="controls">
+        <button onclick="play()">Play</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="nextSong()">Siguiente Canción</button>
+      </div>
+    </div>
+
+    <script src="2seccion3.js"></script>
+</body>
+
+</html>

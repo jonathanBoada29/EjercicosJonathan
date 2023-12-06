@@ -4,7 +4,7 @@ function addTask() {
     const DateInput = document.getElementById('taskInputFec');
     const taskList = document.getElementById('taskList');
 
-    if (NameInput.value !== '') {
+    if (NameInput.value !== '') { 
       const name = NameInput.value;
       const mate = MatenInput.value;
       const feDate = DateInput.value;
@@ -25,7 +25,7 @@ function addTask() {
     }
   }
 
-  function EditarTask(button) {
+  function completedTask(button) {
     const taskItem = button.parentElement;
     taskItem.classList.toggle('completed');
   }

@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+    background: url(imagenes/teatro.jpg);
+    background-size: cover;
+}
+
+.peliculas img {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones #movies{
+    background-color: rgb(255, 242, 0);
+    border-radius: 5px;
+    padding: 10px 8px;
+    border: 2px solid #000000;
+}
+
+.botones #datePicker{
+    background-color: rgb(255, 242, 0);
+    border-radius: 5px;
+    padding: 10px 8px;
+    border: 2px solid #000000;   
+}
+
+.botones #buto{
+    background-color: rgb(255, 242, 0);
+    border-radius: 5px;
+    padding: 10px 8px;
+    border: 2px solid #000000;
+}
+
+
+
+.peliculas {
+    text-align: center;
+    background-color: rgb(171, 0, 0);
+    border-radius: 10px;
+    border: 2px solid rgb(171, 160, 0);
+
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    background-color: rgb(201, 188, 15);
+    width: 50px;
+    height: 30px;
+    border: 1px solid #000000;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #007bff;
+    color: white;
+}
