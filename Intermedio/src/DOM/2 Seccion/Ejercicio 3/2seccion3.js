@@ -11,6 +11,7 @@ const nextSongBtn = document.getElementById('nextSongBtn');
 const prevSongBtn = document.getElementById('prevSongBtn');
 const coverImg = document.getElementById('coverImg');
 
+
 nextSongBtn.addEventListener('click', () => nextSong(true));
 prevSongBtn.addEventListener('click', () => nextSong(false));
 

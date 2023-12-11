@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <label for="inputName" class="form-label">Task</label>
+        <input type="date" class="form-control" id="taskInputFec" required>
+        <div class="invalid-feedback">
+            please enter a delivery date
+        </div>
+    </div>
+    <button onclick="addTask()" type="submit" class="custom-submit-btn">Keep</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="AplicaciónListaTareasInteractiva.js"></script>
+</body>
+
+</html>

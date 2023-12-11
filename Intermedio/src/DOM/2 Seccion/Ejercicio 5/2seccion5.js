@@ -10,7 +10,7 @@ function agregarFila() {
     cell3.innerHTML = `<button onclick="eliminarFila(this)" class="btn">Eliminar</button>`;
   }
 
-  function eliminarFila(btn) {
+  function eliminarFila(btn) { 
     const row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
   }
